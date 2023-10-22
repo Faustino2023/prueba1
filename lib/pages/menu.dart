@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:prueba1/pages/acercade.dart';
 import 'package:prueba1/pages/expanded.dart';
+import 'package:prueba1/pages/safearea.dart';
 
 class Menu extends StatefulWidget {
   @override
@@ -25,12 +26,13 @@ class _MenuPageState extends State<Menu> {
         return Acercade();
         break;
       case 1:
+        return SafeareaApp();
+        break;
+      case 2:
         return ExpandedApp();
-//  break;
-//         case 2:  return Ejemplo2();
-//   break;
-//           case 3: return Ejemplo3();
-//           break;
+        break;
+      //         case 3: return Ejemplo3();
+      //         break;
     }
   }
 

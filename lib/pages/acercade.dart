@@ -5,32 +5,27 @@ void main() {
 }
 
 class Acercade extends StatelessWidget {
+  get mainAxisAlignment => null;
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Text(
-                'Nombre de la aplicación',
-                style: TextStyle(fontSize: 24),
-              ),
-              SizedBox(height: 20),
-              Text(
-                'Descripción de la aplicación',
-                style: TextStyle(fontSize: 16),
-              ),
-              SizedBox(height: 20),
-              Text(
-                'Versión de la aplicación',
-                style: TextStyle(fontSize: 16),
-              ),
-            ],
+    return const Scaffold(
+      body: SafeArea(
+        child: Column(children: <Widget>[
+          SizedBox(height: 50),
+          Padding(padding: EdgeInsets.all(1.0)),
+          Text(
+            textAlign: TextAlign.center,
+            'ANDREA MICHELL FAUSTINO HERNANDEZ',
+            style: TextStyle(fontSize: 15),
           ),
-        ),
+          SizedBox(height: 30),
+          Text(
+            textAlign: TextAlign.center,
+            'DSW21-B',
+            style: TextStyle(fontSize: 15),
+          )
+        ]),
       ),
     );
   }

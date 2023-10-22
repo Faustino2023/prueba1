@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:prueba1/pages/acercade.dart';
 import 'package:prueba1/pages/expanded.dart';
 import 'package:prueba1/pages/menu.dart';
+import 'package:prueba1/pages/safearea.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -20,16 +21,15 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
 
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.blue),
+        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.deepPurple),
         useMaterial3: true,
       ),
       initialRoute: "/menu",
       routes: {
         "/acercade": (context) => Acercade(),
-        "/expanded": (context) => const ExpandedApp(),
-
+        "/expanded": (context) => ExpandedApp(),
         "/menu": (context) => Menu(),
-        // "/principal": (context) => const Principal(),
+        "/safearea": (context) => SafeareaApp(),
         // "/update": (context) => const EditCategoria()
       },
       //home: const MyHomePage(title: 'Tabla de Categorías'),
