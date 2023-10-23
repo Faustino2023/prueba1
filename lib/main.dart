@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:prueba1/pages/acercade.dart';
 import 'package:prueba1/pages/expanded.dart';
+import 'package:prueba1/pages/flexible.dart';
 import 'package:prueba1/pages/menu.dart';
 import 'package:prueba1/pages/safearea.dart';
 
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
         "/expanded": (context) => ExpandedApp(),
         "/menu": (context) => Menu(),
         "/safearea": (context) => SafeareaApp(),
-        // "/update": (context) => const EditCategoria()
+        "/flexible": (context) => const FlexibleWidget()
       },
       //home: const MyHomePage(title: 'Tabla de Categorías'),
     );

@@ -5,25 +5,49 @@ void main() {
 }
 
 class Acercade extends StatelessWidget {
-  get mainAxisAlignment => null;
-
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
       body: SafeArea(
         child: Column(children: <Widget>[
-          SizedBox(height: 50),
+          SizedBox(height: 10),
           Padding(padding: EdgeInsets.all(1.0)),
+          SizedBox(height: 10),
           Text(
             textAlign: TextAlign.center,
-            'ANDREA MICHELL FAUSTINO HERNANDEZ',
-            style: TextStyle(fontSize: 15),
+            'TEMA:',
+            style: TextStyle(fontSize: 30, color: Colors.blue),
           ),
-          SizedBox(height: 30),
+          SizedBox(height: 10),
+          ListTile(
+            leading: Icon(Icons.table_bar_sharp),
+          ),
+          Text(
+            textAlign: TextAlign.center,
+            '- Safearea',
+            style: TextStyle(fontSize: 30, color: Colors.white),
+          ),
+          Text(
+            textAlign: TextAlign.center,
+            '- Explended',
+            style: TextStyle(fontSize: 30, color: Colors.white),
+          ),
+          Text(
+            textAlign: TextAlign.center,
+            '- Flexible',
+            style: TextStyle(fontSize: 30, color: Colors.white),
+          ),
+          SizedBox(height: 10),
+          Text(
+            textAlign: TextAlign.center,
+            'Andrea Michell Faustino Hernandez',
+            style: TextStyle(fontSize: 30),
+          ),
+          SizedBox(height: 10),
           Text(
             textAlign: TextAlign.center,
             'DSW21-B',
-            style: TextStyle(fontSize: 15),
+            style: TextStyle(fontSize: 30),
           )
         ]),
       ),

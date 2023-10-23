@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:prueba1/pages/acercade.dart';
 import 'package:prueba1/pages/expanded.dart';
+import 'package:prueba1/pages/flexible.dart';
 import 'package:prueba1/pages/safearea.dart';
 
 class Menu extends StatefulWidget {
@@ -31,8 +32,9 @@ class _MenuPageState extends State<Menu> {
       case 2:
         return ExpandedApp();
         break;
-      //         case 3: return Ejemplo3();
-      //         break;
+      case 3:
+        return const FlexibleWidget();
+        break;
     }
   }
 
