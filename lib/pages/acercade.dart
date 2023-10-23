@@ -19,9 +19,6 @@ class Acercade extends StatelessWidget {
             style: TextStyle(fontSize: 30, color: Colors.blue),
           ),
           SizedBox(height: 10),
-          ListTile(
-            leading: Icon(Icons.table_bar_sharp),
-          ),
           Text(
             textAlign: TextAlign.center,
             '- Safearea',

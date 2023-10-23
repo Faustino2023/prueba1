@@ -5,30 +5,29 @@ void main() {
 }
 
 class ExpandedApp extends StatelessWidget {
+  const ExpandedApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Row(
-          children: <Widget>[
-            Expanded(
-              child: Container(
-                color: Colors.red,
-                height: 100,
-              ),
+          children: [
+            Container(
+              padding: EdgeInsets.all(40),
+              color: Colors.lightBlue,
+              child: Text('A', style: TextStyle(fontSize: 20)),
             ),
-            Expanded(
-              child: Container(
-                color: Colors.green,
-                height: 100,
-              ),
+            Container(
+              padding: EdgeInsets.all(40),
+              color: Colors.amber,
+              child: Text('B', style: TextStyle(fontSize: 20)),
             ),
-            Expanded(
-              child: Container(
-                color: Colors.blue,
-                height: 100,
-              ),
+            Container(
+              padding: EdgeInsets.all(40),
+              color: Colors.redAccent,
+              child: Text('C', style: TextStyle(fontSize: 20)),
             ),
           ],
         ),

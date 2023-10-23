@@ -3,6 +3,8 @@ import 'package:prueba1/pages/acercade.dart';
 import 'package:prueba1/pages/expanded.dart';
 import 'package:prueba1/pages/flexible.dart';
 import 'package:prueba1/pages/menu.dart';
+// import 'package:prueba1/pages/nosafe.dart';
+
 import 'package:prueba1/pages/safearea.dart';
 
 void main() {
@@ -29,8 +31,9 @@ class MyApp extends StatelessWidget {
       routes: {
         "/acercade": (context) => Acercade(),
         "/expanded": (context) => ExpandedApp(),
-        "/menu": (context) => Menu(),
+        "/menu": (context) => const Menu(),
         "/safearea": (context) => SafeareaApp(),
+        // "/sinsafearea": (context) => Sinsafearea(),
         "/flexible": (context) => const FlexibleWidget()
       },
       //home: const MyHomePage(title: 'Tabla de Categorías'),

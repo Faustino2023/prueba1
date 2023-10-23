@@ -24,10 +24,10 @@ class FlexibleWidget extends StatelessWidget {
                         borderRadius: BorderRadius.circular(15),
                         color: Colors.deepOrange[400],
                       ),
-                      child: Icon(Icons.backpack),
+                      child: const Icon(Icons.backpack),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 10,
                   ),
                   Flexible(
@@ -48,7 +48,7 @@ class FlexibleWidget extends StatelessWidget {
           ),
           Column(
             children: [
-              Text("Ajuste Flexible ajustado"),
+              const Text("Ajuste Flexible ajustado"),
               Row(
                 children: [
                   Flexible(
@@ -60,7 +60,7 @@ class FlexibleWidget extends StatelessWidget {
                         borderRadius: BorderRadius.circular(15),
                         color: Colors.purpleAccent,
                       ),
-                      child: Icon(Icons.backpack),
+                      child: const Icon(Icons.backpack),
                     ),
                   ),
                   SizedBox(
