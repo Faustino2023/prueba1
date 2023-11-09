@@ -3,8 +3,6 @@ import 'package:prueba1/pages/acercade.dart';
 import 'package:prueba1/pages/expanded.dart';
 import 'package:prueba1/pages/flexible.dart';
 import 'package:prueba1/pages/menu.dart';
-// import 'package:prueba1/pages/nosafe.dart';
-
 import 'package:prueba1/pages/safearea.dart';
 
 void main() {
@@ -24,7 +22,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
 
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.green),
         useMaterial3: true,
       ),
       initialRoute: "/menu",

@@ -11,7 +11,7 @@ class FlexibleWidget extends StatelessWidget {
         children: [
           Column(
             children: [
-              Text("Ajuste Flexible suelto"),
+              const Text("Ajuste Flexible suelto"),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [

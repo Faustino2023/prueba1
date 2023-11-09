@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(ExpandedApp());
+  runApp(const ExpandedApp());
 }
 
 class ExpandedApp extends StatelessWidget {
@@ -17,7 +17,7 @@ class ExpandedApp extends StatelessWidget {
             Container(
               padding: EdgeInsets.all(40),
               color: Colors.lightBlue,
-              child: Text('A', style: TextStyle(fontSize: 20)),
+              child: Text('HOLA', style: TextStyle(fontSize: 20)),
             ),
             Container(
               padding: EdgeInsets.all(40),
