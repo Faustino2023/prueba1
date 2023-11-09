@@ -20,7 +20,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-
       theme: ThemeData(
         colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.green),
         useMaterial3: true,
@@ -31,10 +30,8 @@ class MyApp extends StatelessWidget {
         "/expanded": (context) => ExpandedApp(),
         "/menu": (context) => const Menu(),
         "/safearea": (context) => SafeareaApp(),
-        // "/sinsafearea": (context) => Sinsafearea(),
         "/flexible": (context) => const FlexibleWidget()
       },
-      //home: const MyHomePage(title: 'Tabla de Categorías'),
     );
   }
 }
