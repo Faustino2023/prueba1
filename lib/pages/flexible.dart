@@ -5,13 +5,7 @@ class FlexibleWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        leading: GestureDetector(
-            onTap: () {
-              Navigator.pop(context);
-            },
-            child: const Icon(Icons.arrow_back_ios_new)),
-      ),
+      appBar: AppBar(),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10),
         child: Column(
@@ -19,7 +13,8 @@ class FlexibleWidget extends StatelessWidget {
           children: [
             Column(
               children: [
-                const Text("Flexfit.loose"),
+                const Text("Flexfit.loose."
+                    "Flexfit.suelto"),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -56,7 +51,7 @@ class FlexibleWidget extends StatelessWidget {
             ),
             Column(
               children: [
-                const Text("Flexfit.tight"),
+                const Text("Flexfit.tight, Flexible ajustado"),
                 Row(
                   children: [
                     Flexible(
