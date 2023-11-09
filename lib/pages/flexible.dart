@@ -1,88 +1,97 @@
 import 'package:flutter/material.dart';
 
 class FlexibleWidget extends StatelessWidget {
-  const FlexibleWidget({Key? key});
+  const FlexibleWidget({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: [
-          Column(
-            children: [
-              const Text("Ajuste Flexible suelto"),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Flexible(
-                    flex: 1,
-                    fit: FlexFit.loose,
-                    child: Container(
-                      height: 100,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15),
-                        color: Colors.deepOrange[400],
+      appBar: AppBar(
+        leading: GestureDetector(
+            onTap: () {
+              Navigator.pop(context);
+            },
+            child: const Icon(Icons.arrow_back_ios_new)),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 10),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            Column(
+              children: [
+                const Text("Flexfit.loose"),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Flexible(
+                      flex: 1,
+                      fit: FlexFit.loose,
+                      child: Container(
+                        height: 100,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(15),
+                          color: Colors.deepOrange[400],
+                        ),
+                        child: const Icon(Icons.backpack),
                       ),
-                      child: const Icon(Icons.backpack),
                     ),
-                  ),
-                  const SizedBox(
-                    width: 10,
-                  ),
-                  Flexible(
-                    flex: 1,
-                    fit: FlexFit.loose,
-                    child: Container(
-                      height: 100,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15),
-                        color: Colors.deepOrange[400],
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    Flexible(
+                      flex: 1,
+                      fit: FlexFit.loose,
+                      child: Container(
+                        height: 100,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(15),
+                          color: Colors.deepOrange[400],
+                        ),
+                        child: const Icon(Icons.backpack),
                       ),
-                      child: Icon(Icons.backpack),
-                    ),
-                  )
-                ],
-              )
-            ],
-          ),
-          Column(
-            children: [
-              const Text("Ajuste Flexible ajustado"),
-              Row(
-                children: [
-                  Flexible(
-                    flex: 1,
-                    fit: FlexFit.tight,
-                    child: Container(
-                      height: 100,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15),
-                        color: Colors.purpleAccent,
+                    )
+                  ],
+                )
+              ],
+            ),
+            Column(
+              children: [
+                const Text("Flexfit.tight"),
+                Row(
+                  children: [
+                    Flexible(
+                      flex: 1,
+                      fit: FlexFit.tight,
+                      child: Container(
+                        height: 100,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(15),
+                          color: Colors.purpleAccent,
+                        ),
+                        child: const Icon(Icons.backpack),
                       ),
-                      child: const Icon(Icons.backpack),
                     ),
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Flexible(
-                    flex: 1,
-                    fit: FlexFit.tight,
-                    child: Container(
-                      height: 100,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(15),
-                        color: Colors.purpleAccent,
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    Flexible(
+                      flex: 1,
+                      fit: FlexFit.tight,
+                      child: Container(
+                        height: 100,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(15),
+                          color: Colors.purpleAccent,
+                        ),
+                        child: const Icon(Icons.backpack),
                       ),
-                      child: Icon(Icons.backpack),
-                    ),
-                  )
-                ],
-              )
-            ],
-          )
-        ],
+                    )
+                  ],
+                )
+              ],
+            )
+          ],
+        ),
       ),
     );
   }

@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:prueba1/pages/acercade.dart';
 import 'package:prueba1/pages/expanded.dart';
 import 'package:prueba1/pages/flexible.dart';
-// import 'package:prueba1/pages/nosafe.dart';
 
 import 'package:prueba1/pages/safearea.dart';
 
@@ -32,10 +31,12 @@ class _MenuPageState extends State<Menu> {
       case 1:
         return SafeareaApp();
       case 2:
-        return ExpandedApp();
+        return const ExpandedApp();
       case 3:
         return const FlexibleWidget();
       case 4:
+      //   return Safearea2();
+      // case 5:
       // return Sinsafearea();
       // break;
     }
@@ -86,9 +87,12 @@ class _MenuPageState extends State<Menu> {
             const Divider(
               color: Colors.red,
             ),
+            const Divider(
+              color: Colors.red,
+            ),
             ListTile(
               leading: const Icon(Icons.arrow_forward_ios),
-              title: Text('Ejemplo de EXPANDED'),
+              title: const Text('Ejemplo de EXPANDED'),
               onTap: () {
                 _onItemSelect(2);
               },
