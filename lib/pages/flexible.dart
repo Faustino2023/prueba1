@@ -5,7 +5,6 @@ class FlexibleWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10),
         child: Column(
@@ -13,7 +12,7 @@ class FlexibleWidget extends StatelessWidget {
           children: [
             Column(
               children: [
-                const Text("Flexfit.loose."
+                const Text("Flexfit.loose, "
                     "Flexfit.suelto"),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -31,7 +30,7 @@ class FlexibleWidget extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(
-                      width: 10,
+                      width: 20,
                     ),
                     Flexible(
                       flex: 1,
@@ -67,7 +66,7 @@ class FlexibleWidget extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(
-                      width: 10,
+                      width: 20,
                     ),
                     Flexible(
                       flex: 1,

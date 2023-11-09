@@ -1,37 +1,40 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const ExpandedApp());
-}
-
 class ExpandedApp extends StatelessWidget {
   const ExpandedApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: Row(
-          children: [
-            Container(
-              padding: EdgeInsets.all(40),
-              color: Colors.lightBlue,
-              child: Text('HOLA', style: TextStyle(fontSize: 20)),
-            ),
-            Container(
-              padding: EdgeInsets.all(40),
-              color: Colors.amber,
-              child: Text('B', style: TextStyle(fontSize: 20)),
-            ),
-            Container(
-              padding: EdgeInsets.all(40),
-              color: Colors.redAccent,
-              child: Text('C', style: TextStyle(fontSize: 20)),
-            ),
-          ],
+    const double height = 100;
+    return Row(
+      children: [
+        Container(
+          height: height,
+          color: Colors.red,
+          child: const Center(
+            child: Text('Container 1'),
+          ),
         ),
-      ),
+        Expanded(
+          flex: 2,
+          child: Container(
+              height: height,
+              color: Colors.green,
+              child: const Center(
+                child: Text('Container 2'),
+              )),
+        ),
+        Expanded(
+          flex: 1,
+          child: Container(
+            height: height,
+            color: Colors.blue,
+            child: const Center(
+              child: Text('Container 3'),
+            ),
+          ),
+        ),
+      ],
     );
   }
 }
